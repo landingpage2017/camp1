@@ -116,7 +116,8 @@ h4 {font-size: 1.2em;}
 
 .logo .info ul{
     list-style-type: none;
-    -webkit-padding-start: 10px;
+    padding: 0;
+    paddingßright: 10px;
 }
 .logo .info ul li:before {
     content: url("../assets/v.png");
