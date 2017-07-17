@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Myriad-Hebrew;
+    src: url('../fonts/myriad-hebrew.otf');
+}
+body {
+    /*position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Myriad-Hebrew;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {margin: 0;}
+
+h2 {
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1.5em;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h3 , h4 {display: inline-block; margin: 0; color: #3c414a;}
+
+h3 {font-size: 3.5em; vertical-align: middle;}
+h4 {font-size: 1.2em;}
+
+#container {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    background-color: #add2ed;
+    position: relative;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 80vh;
+    background: linear-gradient(to bottom, rgba(33,39,51,1) 0%,rgba(69,73,82,1) 73%,rgba(33,39,51,1) 100%)
+}
+
+.login-form {
+    padding: 20px;
+    text-align: center;
+}
+.login-form input , .login-form button {
+    width: 90%;
+    padding: 3px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.login-form button{
+    border:1px solid #cb9b14; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:3em;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+    background-color: #eab92d; background-image: -webkit-gradient(linear, left top, left bottom, from(#eab92d), to(#c79810));
+    background-image: -webkit-linear-gradient(top, #eab92d, #c79810);
+    background-image: -moz-linear-gradient(top, #eab92d, #c79810);
+    background-image: -ms-linear-gradient(top, #eab92d, #c79810);
+    background-image: -o-linear-gradient(top, #eab92d, #c79810);
+    background-image: linear-gradient(to bottom, #eab92d, #c79810);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#eab92d, endColorstr=#c79810);
+}
+
+.login-form button:hover{
+    border:1px solid #a17b10;
+    background-color: #cf9f15; background-image: -webkit-gradient(linear, left top, left bottom, from(#cf9f15), to(#98740c));
+    background-image: -webkit-linear-gradient(top, #cf9f15, #98740c);
+    background-image: -moz-linear-gradient(top, #cf9f15, #98740c);
+    background-image: -ms-linear-gradient(top, #cf9f15, #98740c);
+    background-image: -o-linear-gradient(top, #cf9f15, #98740c);
+    background-image: linear-gradient(to bottom, #cf9f15, #98740c);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#cf9f15, endColorstr=#98740c);
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../assets/family.jpg");
+    /*background-size: contain;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: left bottom;*/
+    background-position: 60%;
+}
+
+.logo {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.logo img {
+    max-width: 50%;
+}
+
+.logo .info {
+    background-color: rgba(255,255,255,.6);
+    width: 50%;
+    margin: 0 30px;
+    border-radius: 5px;
+    color: #212733;
+}
+
+.logo .info ul{
+    list-style-type: none;
+    -webkit-padding-start: 10px;
+}
+.logo .info ul li:before {
+    content: url("../assets/v.png");
+    line-height: 30px;
+    padding-left: 10px;
+    vertical-align: text-top;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    background-color: rgba(161, 182, 235, 0.5);
+}
+
+.box {
+    flex: 1;
+    background-color: white;
+    border-radius: 2px;
+    margin: 5px 10px;
+    padding: 0 10px;
+    box-shadow: 5px 5px 10px #3c414a;
+}
+.box.first {background-color: #555;}
+.box.first h3, .box.first h4 {color: white;}
+
+@media screen and (max-width: 1420px) {
+    body { font-size: 14px; }
+    .logo img {
+      max-width: 40%;
+    }   
+}
+
+@media screen and (max-width: 1260px) {
+    h3 {font-size: 3.5em;}
+    h4 {font-size: 1.2em;}
+    .logo .info {
+        width: 60%;
+        margin: 0 10px;
+    }
+
+    .box {
+        margin: 5px 5px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .logo { flex-direction: column; }
+    .logo img {
+      max-width: 60%;
+    }
+    .logo .info {
+        font-size: 16px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    h3 , h4 {display: block;} 
+    .form {width: 40%; height: auto;}
+    .box {text-align: center;}  
+}
+
+@media screen and (max-width: 880px) {
+    #container {flex-direction: column; width: 98%}
+    .boxes {display: none;}
+    .form {width: 100%; height: auto;}
+}

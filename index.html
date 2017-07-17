@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body dir="rtl">
+    <div id="container">
+        <div class="image">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="logo">
+                <div class="info">
+                    <ul class="mylist">
+                        <li>בית עם גינה בפחות ממיליון ש"ח</li>
+                        <li>זיכוי של 20% מס עד 240,000 בשנה</li>
+                        <li>קל לנהל משק בית: נהנים מחדר אוכל ומכבסה</li>
+                        <li>חינוך מעולה ומסובסד (צהרון 180, פעוטון 945)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box first">
+                    <h3>1</h3>
+                    <h4>ממלאים פרטים</h4>
+                </div>
+                <div class="box">
+                    <h3>2</h3>
+                    <h4>זיוה תצור קשר</h4>
+                </div>
+                <div class="box">
+                    <h3>3</h3>
+                    <h4>מתקבלים כחברים</h4>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h2 id="formtitle">למידע נוסף ובדיקת זכאות לחצו כאן!</h2>
+            <div style="display:none;" id="thankyou_message">
+                <h2><b>תודה רבה</b><br>נחזור אליך בקרוב!</h2>
+            </div>
+            <form id = "gform" class="login-form" method="POST" action="https://script.google.com/macros/s/AKfycbx4mw3Q5Rrs3qTpe693NGYI2n52onRhRYwPj0WvJcGJEjvzIOuA/exec">
+                <input type="text" id="name" name="name" placeholder="שם מלא"/>
+                <input type="text" id="phone" name="phone" placeholder="טלפון"/>
+                <button>שלח</button>
+            </form>
+        </div>
+    </div>
+    <script data-cfasync="false" type="text/javascript" src="./js/sendform.js"></script>
+</body>
+</html>
